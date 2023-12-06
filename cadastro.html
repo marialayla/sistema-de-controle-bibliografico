@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stayle6.css">
+    <title>Biblioteca SENAI/CETEC Araguaína</title>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca SENAI/CETEC Araguaína</h1>
+        <nav>
+            <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="escolherLivro.html">Escolher Livro</a></li>
+                <li><a href="emprestimoVirtual.html">Empréstimo Virtual</a></li>
+                <li><a href="devolucao.html">Devolução</a></li>
+                <li><a href="gerarRelatorio.html" class="active">Gerar Relatório</a></li>
+                <li><a href="saibaMais.html" class="cta-link">Saiba Mais</a></li>
+        </nav>
+    </header>
+    <section id="cadastro">
+        <h2>Cadastro</h2>
+        <form onsubmit="realizarCadastro(); return false;">
+            <label for="nomeUsuario">Nome de Usuário:</label>
+            <input type="text" id="nomeUsuario" required>
+            <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+                <label for="senha">Senha:</label>
+                <input type="text" id="senha" required>
+                <label for="confirmacaoSenha">Confirmação de Senha:</label>
+                <input type="text" required>
+                <button type="submit" onclick="Validacadastro()">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 SENAI CETEC Araguaína</p>
+    </footer>
+
+    <script src="./script6.js"></script>
+</body>
+</html>

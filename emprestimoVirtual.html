@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Empréstimo Virtual - Biblioteca SENAI/CETEC</title>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca SENAI/CETEC Araguaína</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="escolherLivro.html">Escolher Livro</a></li>
+                <li><a href="devolucao.html">Devolução</a></li>
+                <li><a href="gerarRelatorio.html" class="active">Gerar Relatório</a></li>
+                <li><a href="saibaMais.html" class="cta-link">Saiba Mais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="emprestimoVirtual">
+        <h2>Empréstimo Virtual</h2>
+        <p>Realize empréstimos de livros online e aproveite a leitura no conforto da sua casa.</p>
+
+        <form onsubmit="realizarEmpréstimoVirtual(); return false;">
+            <label for="nomeUsuario">Nome do Usuário:</label>
+            <input type="text" id="nomeUsuario" required>
+
+            <label for="livroSelecionado">Livro Selecionado:</label>
+            <select id="livroSelecionado" required>
+                <option value="" disabled selected>Selecione um livro</option>
+                <option value="A Hipótese do Amor">A Hipótese do Amor</option>
+                <option value="Corte de Névoa e Fúria">Corte de Névoa e Fúria</option>
+                <option value="É Assim Que Acaba">É Assim Que Acaba</option>
+            </select>
+
+            <button type="submit">Realizar Empréstimo</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 SENAI CETEC Araguaína</p>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>

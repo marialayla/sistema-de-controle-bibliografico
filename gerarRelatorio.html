@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>Gerar Relatório - Biblioteca SENAI/CETEC</title>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca SENAI/CETEC Araguaína</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="escolherLivro.html">Escolher Livro</a></li>
+                <li><a href="emprestimoVirtual.html">Empréstimo Virtual</a></li>
+                <li><a href="devolucao.html">Devolução</a></li>
+                <li><a href="saibaMais.html" class="cta-link">Saiba Mais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="gerarRelatorio">
+        <h2>Gerar Relatório</h2>
+        <form id="relatorioForm">
+            <label for="tipoRelatorio">Tipo de Relatório:</label>
+            <select id="tipoRelatorio" name="tipoRelatorio">
+                <option value="emprestimos">Empréstimos</option>
+                <option value="devolucoes">Devoluções</option>
+                <option value="catalogacao">Catalogação</option>
+            </select>
+
+            <label for="dataInicio">Data de Início:</label>
+            <input type="date" id="dataInicio" name="dataInicio" required>
+
+            <label for="dataFim">Data de Fim:</label>
+            <input type="date" id="dataFim" name="dataFim" required>
+
+            <button type="submit">Gerar Relatório</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 SENAI CETEC Araguaína</p>
+    </footer>
+
+    <script src="script4.js"></script>
+</body>
+</html>

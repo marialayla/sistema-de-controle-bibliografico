@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style1.css">
+    <title>Escolher Livro - Biblioteca SENAI/CETEC</title>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca SENAI/CETEC Araguaína</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="emprestimoVirtual.html" class="active">Empréstimo Virtual</a></li>
+                <li><a href="devolucao.html" class="active">Devolução</a></li>
+                <li><a href="gerarRelatorio.html" class="active">Gerar Relatório</a></li>
+                <li><a href="saibaMais.html" class="cta-link">Saiba Mais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="escolherLivro">
+        <h2>Escolha Seu Livro</h2>
+        <p>Explore nossa vasta coleção de livros e encontre a próxima leitura emocionante.</p>
+
+        <ul class="lista-livros">
+            <li>
+                <img src="./Nataly.1.jpeg" alt="A Hipótese do Amor">
+                <h3>A Hipótese do Amor</h3>
+                <p>Ali Hazelwood</p>
+                <button onclick="realizarEmprestimo('A Hipótese do Amor')">Realizar Empréstimo</button>
+            </li>
+
+            <li>
+                <img src="./Nataly.2.jpeg" alt="Corte de Névoa e Fúria">
+                <h3>Corte de Névoa e Fúria</h3>
+                <p>Sarah J. Maas</p>
+                <button onclick="realizarEmprestimo(`Corte de Névoa e Fúria`)">Realizar Empréstimo</button>
+            </li>
+            
+            <li>
+                <img src="./Nataly.3.jpeg" alt="É Assim Que Acaba">
+                <h3>É Assim Que Acaba</h3>
+                <p>Colleen Hoover</p>
+                    <button onclick="realizarEmprestimo(`É Assim Que Acaba`)">Realizar Empréstimo</button>
+            </li>
+        </ul>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 SENAI CETEC Araguaína</p>
+    </footer>
+</body>
+</html>
